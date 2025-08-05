@@ -3,9 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Pesquisar Portfólios</title>
+  <script src="script.js" defer></script>
+  <style>
+    .portifolio {
+      display: none;
+      margin: 5px 0;
+      transition: all 0.3s ease;
+    }
+
+    .portifolio a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .portifolio a:hover {
+      color: #007BFF;
+    }
+  </style>
 </head>
 <body>
-  
+  <input type="text" name="pesquisaPortifolios" id="pesquisaPortifolios" placeholder="Pesquisar portfólios">
+  <div id="listaPortifolios"></div>
 </body>
 </html>
